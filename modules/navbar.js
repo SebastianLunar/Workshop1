@@ -17,7 +17,11 @@ const navbar = (container) => {
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-lg-auto d-flex align-items-lg-center">
-            <li
+          <li
+          class="nav-item d-lg-flex align-items-center my-2 my-lg-0 me-lg-5"
+        >
+          <a href="./pages/subirPrenda.html">SUBIR PRENDA</a>
+        </li><li
               class="nav-item d-lg-flex align-items-center my-2 my-lg-0 me-lg-5"
             >
               <a href="#">SHOP</a>
@@ -52,7 +56,7 @@ const navbar = (container) => {
               <li
                 class="nav-item d-lg-flex align-items-center my-2 my-lg-0 me-lg-3"
               >
-                <a class="p-0" href="./cart.html"><img src="../images/icon-shop.svg" alt="shop" /></a>
+                <a class="p-0" href="./pages/cart.html"><img src="../images/icon-shop.svg" alt="shop" /></a>
               </li>
             </ul>
           </ul>
