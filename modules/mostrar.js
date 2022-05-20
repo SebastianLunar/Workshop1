@@ -1,17 +1,19 @@
-const mostrar = (template, container, data) => {
-    let fragment = document.createDocumentFragment();
+const mostrar = (container, data) => {
+    container.innerHTML = ''
+    data.forEach((product)=> {
+        const { id, img, name, precio } = product;
+        const div = document.createElement("div")
+        div.classList.add("tarjeta")
+        div.innerHTML = `
+        <div class="producto">
+            <img class= "cover" id="${id}" src="${img}" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        </div>
+        <div class="description">
+            <a>${name}</a><br>
+            <span>${precio}</span>
+        </div>
+        `
 
-    data.forEach(item => {
-        const {id, name, image } = item;
-
-        // template.querySelector('img').setAttribute('src', image );
-        // template.querySelector('img').setAttribute('alt', name );
-        // template.querySelector('h5').textContent = name;
-        // template.querySelector('a').setAttribute('id', id);
-
-        // const clone = template.cloneNode(true);
-        // fragment.appendChild(clone);
+        container.appendChild(div)
     })
-
-    container.appendChild(fragment);
 }

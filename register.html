@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8">
@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link rel="stylesheet" href="./login.css">
-	<title>Login- Príncipe Fresco</title>
+	<link rel="stylesheet" href="./styles/register.css">
+	<title>Login - Príncipe Fresco</title>
 </head>
 
 <body>
@@ -23,35 +23,23 @@
 
 									<div class="text-center">
 										<img class="logo" src="https://i.ibb.co/CMk7mK9/cover.png">
-										<h5 class="mb-4"><i>Por favor ingrese a su cuenta</i></h5>
+										<h5 class="mb-4"><i>Registro</i></h5>
 									</div>
-									<form>
-
+									<form id="form">
 										<div class="form-outline mb-3">
-											<label class="form-label" for="form2Example11">Usuario</label>
-											<input type="email" id="form2Example11" class="form-control"
+											<label class="form-label" for="usuario">Usuario</label>
+											<input type="email" id="usuario" class="form-control"
 												placeholder="Número de teléfono o correo electrónico" />
-
 										</div>
-
 										<div class="form-outline mb-4">
-											<label class="form-label" for="form2Example22">Contraseña</label>
-											<input type="password" id="form2Example22" class="form-control" />
-
+											<label class="form-label" for="password">Contraseña</label>
+											<input type="password" id="password" class="form-control" />
 										</div>
-
 										<div class="text-center pt-1 mb-5 pb-1">
-											<button class="btn btn-danger btn-block mb-3 gradient-custom" type="button">Ingresar</button>
-											<a class="text-muted" href="#!">¿Olvidó su contraseña?</a>
+											<a class="btn btn-danger btn-block mb-3 gradient-custom" type="submit" name="submit" id="enviar">Registrarme</a>
 										</div>
-
-										<div class="d-flex align-items-center justify-content-center pb-4">
-											<p class="mb-0 me-2">¿No tiene una cuenta?</p>
-											<button type="button" class="btn btn-outline-danger">Crear una nueva cuenta</button>
-										</div>
-
 									</form>
-
+									<p class="text-center">¿ Ya tienes cuenta ? Ingresa <a href="../index.html">aquí</a></p>
 								</div>
 							</div>
 							<div class="col-lg-6 d-flex align-items-center gradient-custom">
@@ -68,7 +56,7 @@
 				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 					integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 					crossorigin="anonymous"></script>
-				<script src="./scripts/script.js"></script>
+				<script src="./scripts/register.js" type="module"></script>
 </body>
 
 </html>

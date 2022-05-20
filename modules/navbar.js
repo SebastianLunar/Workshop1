@@ -1,24 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="../images/Logo.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="../styles/main.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <title>...</title>
-  </head>
-
-  <nav
-      class="navbar navbar-expand-lg navbar-light px-5 vw-100 position-absolute top-0"
-    >
-      <div class="container px-0">
-        <a class="navbar-brand mx-lg-5" href="#">
+const navbar = (container) => {
+    container.innerHTML = `
+    <div class="container px-0">
+        <a class="navbar-brand mx-lg-5" href="../index.html">
           <img src="../images/FullLogosvg.svg" alt="logo" />
         </a>
         <button
@@ -37,14 +20,14 @@
             <li
               class="nav-item d-lg-flex align-items-center my-2 my-lg-0 me-lg-5"
             >
-              <a href="./home.html">SHOP</a>
+              <a href="#">SHOP</a>
             </li>
             <li
               class="nav-item d-lg-flex align-items-center my-2 my-lg-0 me-lg-5"
             >
-              <a href="#">COLLECTIONS</a>
+              <a href="../prenda.html">COLLECTIONS</a>
             </li>
-          </ul>
+          
             <ul class="d-flex justify-content-around align-items-end">
               <li
                 class="nav-item dropdown d-lg-flex align-items-center my-2 my-lg-0 me-lg-3"
@@ -67,26 +50,15 @@
                 </ul>
               </li>
               <li
-                class="nav-item d-lg-flex align-items-center my-2 my-lg-0 me-lg-3 svg-icon"
+                class="nav-item d-lg-flex align-items-center my-2 my-lg-0 me-lg-3"
               >
-                <a href="#"><img src="../images/icon-shop.svg" alt="shop" /></a>
+                <a class="p-0" href="./cart.html"><img src="../images/icon-shop.svg" alt="shop" /></a>
               </li>
             </ul>
+          </ul>
         </div>
       </div>
-    </nav>
+    `
+}
 
-    <footer class="container">
-      <div class="text-center">
-      </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../scripts/script.js" type="module"></script>
-  </body>
-</html>
+export default navbar;
