@@ -1,0 +1,32 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Crown Sweatshirt",
+            "image": "https://ibb.co/c8svTrK",
+            "price": 80.00,
+            "description": "Let them know you’re 90s royalty with this official The Fresh Prince crown pattern sweater. Throw vintage vibes that Uncle Phil would approve of. Featuring woven The Fresh Prince logo on chest. Navy crown print crew neck sweatshirt with white ribbed collar and waist band. Cotton/Poly blend."
+        },
+        {
+            "id": 2,
+            "name": "",
+            "image": "https://ibb.co/ynm0TF2",
+            "price": 100.00,
+            "description": ""
+        },
+        {
+            "id": 3,
+            "name": "Product 1",
+            "image": "",
+            "price": 70.00,
+            "description": ""
+        },
+        {
+            "id": 4,
+            "name": "Product 1",
+            "image": "",
+            "price": 70.00,
+            "description": ""
+        }
+    ]
+}
