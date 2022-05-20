@@ -1,0 +1,10 @@
+@import 'nav';
+
+#hola{
+    font-size: 45px;
+    color: purple
+}
+
+nav {
+    @include nav-bar
+}

@@ -1,0 +1,46 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Crown Sweatshirt",
+            "image": "https://ibb.co/c8svTrK",
+            "image2": "https://ibb.co/0Vntj3W",
+            "image3": "https://ibb.co/74PqfX5",
+            "image4": "https://ibb.co/0J7SXR2",
+            "price": 85.00,
+            "description": "Let them know you’re 90s royalty with this official The Fresh Prince crown pattern sweater. Throw vintage vibes that Uncle Phil would approve of. Featuring woven The Fresh Prince logo on chest. Navy crown print crew neck sweatshirt with white ribbed collar and waist band. Cotton/Poly blend."
+        },
+        {
+            "id": 2,
+            "name": "Fresh Stripe Sweater",
+            "image": "https://ibb.co/ynm0TF2",
+            "image2": "https://ibb.co/FJQBzs9",
+            "image3": "https://ibb.co/pZr9JsQ",
+            "price": 75.00,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor assumenda veniam, sunt necessitatibus adipisci omnis earum nihil hic voluptas! In eum pariatur mollitia tempora magni rem voluptatibus asperiores saepe rerum?            "
+        },
+        {
+            "id": 3,
+            "name": "Fresh Black Tie-Dye Hoodie",
+            "image": "https://ibb.co/TBksm3S",
+            "image2": "https://ibb.co/k9qHXqS",
+            "image3": "https://ibb.co/jMPD9mF",
+            "price": 45.00,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor assumenda veniam, sunt necessitatibus adipisci omnis earum nihil hic voluptas! In eum pariatur mollitia tempora magni rem voluptatibus asperiores saepe rerum?            "
+        },
+        {
+            "id": 4,
+            "name": "Pose For It Tee",
+            "image": "https://ibb.co/jhRkhkR",
+            "image2": "https://ibb.co/xzj52PT",
+            "image3": "https://ibb.co/VQZ171C",
+            "image4": "https://ibb.co/VQjQxWZ",
+            "image5": "https://ibb.co/VQZ171C",
+            "price": 85.00,
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor assumenda veniam, sunt necessitatibus adipisci omnis earum nihil hic voluptas! In eum pariatur mollitia tempora magni rem voluptatibus asperiores saepe rerum?            "
+        }
+    ],
+    "usuarios":
+    [
+    ]
+}
