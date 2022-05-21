@@ -1,3 +1,5 @@
+
+
 const showPrend =  (prend, data) => {
     const {name, image, image2, image3, price, description} = data;
     prend.innerHTML = `
