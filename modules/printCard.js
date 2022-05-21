@@ -5,17 +5,16 @@ const printCard = async (url, container) => {
     console.log(data)
     let card;
     data.forEach(element  => {
-        const {name, image, image2, image3, price, id, description} = element;
+        const {name, image} = element;
         card = document.createElement("div");
         card.classList.add("card");
         card.innerHTML = `
         <a href="./prenda.html">
-            <img src="$}" alt="$}">
-                class="card-img-top" alt="...">
+        <img src="${image}" class="card-image-top" alt="Rectangle-7" border="0">
             <div class="card-body">
                 <h5 class="card-title">${name}</h5>
                 <strong>
-              <p class="card-text">$ $}</p>
+              <p class="card-text">$ ${price}</p>
                 </strong>
             </div>
         </a>

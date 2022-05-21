@@ -1,5 +1,6 @@
 import navbar from "../modules/navbar.js";
 import PostData from "../helpers/postData.js";
+import footer from "../modules/footer.js";
 
 const formulario = document.querySelector(".form");
 let newproduct = {}
@@ -12,10 +13,13 @@ const currency = function (number) {
 document.addEventListener('DOMContentLoaded', () => {
     const nav = document.querySelector("nav#navbar");
     navbar(nav);
+    const foot = document.getElementById("containerFooter");
+    footer(foot);
 })
 
 formulario.addEventListener("submit", function (c) {
     c.preventDefault()
+
 
     newproduct.name = document.getElementById('name').value;
     newproduct.description = document.getElementById('description').value;
@@ -31,6 +35,6 @@ formulario.addEventListener("submit", function (c) {
         showConfirmButton: false,
         timer: 3000
     });
-    // window.location.reload();
 
+    formulario.reset()
 })
