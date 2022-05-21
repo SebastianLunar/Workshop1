@@ -24,9 +24,7 @@ const showPrend =  (prend, data) => {
                       </div>
                       <button class="btn btn-dark w-100 my-2 rounded-0" id="add-cart">ADD TO CART</button>
                       <button class="btn btn-primary w-100 my-2 rounded-0" id="buy-now">BUY IT NOW</button>
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae velit mollitia laborum, placeat incidunt vitae aperiam unde minima eos veritatis voluptas quia dolor dolores accusantium alias hic debitis repellat.
-                      </p>
+                      <p>${description}</p>
                   </div>
               </div>
           </div>

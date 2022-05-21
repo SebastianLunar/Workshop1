@@ -7,7 +7,11 @@ let url = "https://principe-fresco-api.herokuapp.com/usuarios";
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-  
+    Swal.fire({
+      icon: 'success',
+      title: 'Gracias por tu registro!',
+      timer: 3000
+  });
     let usuario = document.getElementById('usuario').value;
     let password = document.getElementById('password').value;
 
@@ -18,13 +22,8 @@ form.addEventListener('submit', async (e) => {
     }
 
   await PostData(url, infoUser);
-
+  
   window.location.href = "../index.html";
-  Swal.fire({
-    icon: 'success',
-    title: 'Gracias por tu registro!',
-    showConfirmButton: false,
-    timer: 3000
-});
+
 })
 
