@@ -1,22 +1,16 @@
 import navbar from "../modules/navbar.js";
 import footer from "../modules/footer.js";
-
-
-
 import GetData from '../helpers/getData.js';
-import showPrend from '../modules/showPrend.js';
+import {productos} from '../helpers/urls.js';
+import printSelectedCard from '../modules/printSelectedCard.js';
 
 
 document.addEventListener('DOMContentLoaded', async () => {
+    const container = document.querySelector('#main-container');
     const nav = document.querySelector("nav#navbar");
-    navbar(nav);
     const foot = document.getElementById("containerFooter");
+    const { data } = await GetData(productos+'/'+'2');
+    navbar(nav);
     footer(foot);
+    printSelectedCard(container, data);
 })
-
-const container = document.querySelector('#containerPrend');
-container.addEventListener('DOMContentLoaded', async () => {
-    const containerPrend = document.getElementById('containerPrend');
-    const { data } = await GetData('https://principe-fresco-api.herokuapp.com/products/'+'1')
-    showPrend(containerPrend, data);
-});
