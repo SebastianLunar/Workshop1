@@ -6,6 +6,7 @@ import GetData from '../helpers/getData.js';
 import printSelectCard from '../modules/printSelectedCard.js';
 import cuadro1 from '../modules/printCuadro1.js';
 import cuadro2 from '../modules/printCuadro2.js';
+import {productos} from '../helpers/urls.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
     const container = document.querySelector('#main-container');
