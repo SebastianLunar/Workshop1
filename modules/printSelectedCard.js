@@ -1,7 +1,7 @@
 const printSelectCard = (container, data) => {
     console.log(data)
-        const { id, name, price, image, image2, image3, description } = data;
-        container.innerHTML += `
+    const { id, name, price, image, image2, image3, description } = data;
+    container.innerHTML += `
         <div class="container d-flex justify-content-center">
             <div class="row d-flex justify-content-center">
                 <div class="col-4 d-flex flex-row">
@@ -32,5 +32,4 @@ const printSelectCard = (container, data) => {
         </div>
         `
 }
-
 export default printSelectCard;

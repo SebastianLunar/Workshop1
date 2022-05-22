@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const container = document.querySelector('#main-container');
     const nav = document.querySelector("nav#navbar");
     const foot = document.getElementById("containerFooter");
-    const { data } = await GetData(productos+'/'+'2');
+    let id = localStorage.getItem("selected");
+    const { data } = await GetData(productos+'/'+id);
     navbar(nav);
     footer(foot);
     printSelectedCard(container, data);
