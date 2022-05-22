@@ -1,4 +1,4 @@
-const printSelectCard = (container, data) => {
+const cuadro1 = (container, data) => {
     const { id, name, price, image, image2, image3, description } = data;
     container.innerHTML = '';
     container.innerHTML += `
@@ -6,10 +6,10 @@ const printSelectCard = (container, data) => {
             <div class="row d-flex justify-content-center">
                 <div class="col-4 d-flex flex-row">
                     <div class="d-flex flex-column pe-3">
-                        <img class="w-100 pb-3" src="${image2}" alt="Frame-20" border="0" id="cuadro-1">
+                        <img class="w-100 pb-3" src="${image}" alt="Frame-20" border="0" id="cuadro-3">
                         <img class="w-100 pb-3" src="${image3}" alt="Frame-20" border="0" id="cuadro-2">
                     </div>
-                    <img src="${image}" alt="Rectangle" border="0" class="w-75" id="cuadro-3">
+                    <img src="${image2}" alt="Rectangle-7" border="0" class="w-75" id="cuadro-1">
                 </div>
                 <div class="col-4">
                     <h1>${name}</h1>
@@ -32,4 +32,4 @@ const printSelectCard = (container, data) => {
         </div>
         `
 }
-export default printSelectCard;
+export default cuadro1;
