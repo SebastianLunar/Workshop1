@@ -3,9 +3,7 @@ import {productos} from "../helpers/urls.js";
 import navbar from "../modules/navbar.js";
 import footer from "../modules/footer.js";
 import GetData from '../helpers/getData.js';
-import {productos} from '../helpers/urls.js';
 import printSelectCard from '../modules/printSelectedCard.js';
-import printSuggested from "../modules/printSuggested.js";
 
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -19,4 +17,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     footer(foot);
     printSelectCard(container, data);
     printSuggested(productos, cont2);
+})
+
+document.addEventListener('click', ({target})=>{
+    if ((target.classList.contains('card-image-top'))||(target.classList.contains('card-body'))||(target.classList.contains('card-title'))||(target.classList.contains('card-text'))) {
+        let id = target.id
+        localStorage.setItem("selected", id)
+        window.location.href = "../pages/prenda.html"
+    }
 })
