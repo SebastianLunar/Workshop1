@@ -29,7 +29,7 @@ form.addEventListener('submit', async (e) => {
   }
 
   await PostData(url, infoUser);
-
+  localStorage.setItem('usuario', infoUser.usuario);
 
   Swal.fire({
     icon: 'success',

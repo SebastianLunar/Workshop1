@@ -3,21 +3,20 @@ import {productos} from "../helpers/urls.js";
 import navbar from "../modules/navbar.js";
 import footer from "../modules/footer.js";
 import GetData from '../helpers/getData.js';
-import showPrend from '../modules/showPrend.js';
+import {productos} from '../helpers/urls.js';
+import printSelectCard from '../modules/printSelectedCard.js';
+import printSuggested from "../modules/printSuggested.js";
 
 
 document.addEventListener('DOMContentLoaded', async () => {
+    const container = document.querySelector('#main-container');
     const nav = document.querySelector("nav#navbar");
-    navbar(nav);
     const foot = document.getElementById("containerFooter");
+    const cont2 = document.getElementById("conteSugerencias");
+    let id = localStorage.getItem("selected");
+    const { data } = await GetData(productos+'/'+id);
+    navbar(nav);
     footer(foot);
-    const cont2 = document.getElementById("container");
-    await printSuggested(productos, cont2);
+    printSelectCard(container, data);
+    printSuggested(productos, cont2);
 })
-
-// const container = document.querySelector('#containerPrend');
-// container.addEventListener('DOMContentLoaded', async () => {
-//     const containerPrend = document.getElementById('containerPrend');
-//     const { data } = await GetData('https://principe-fresco-api.herokuapp.com/products/'+'1')
-//     showPrend(containerPrend, data);
-// });

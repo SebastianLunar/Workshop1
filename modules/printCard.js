@@ -4,7 +4,7 @@ const printCard = async (url, container) => {
     const { data } = await GetData(url);
     let card;
     data.forEach(element  => {
-        const {id, name, image, price} = element;
+        const {name, image, price, id} = element;
         card = document.createElement("div");
         card.classList.add("card");
         card.setAttribute("id", id)
