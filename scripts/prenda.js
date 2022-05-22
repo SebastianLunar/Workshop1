@@ -1,5 +1,3 @@
-import printSuggested from "../modules/printSuggested.js";
-import {productos} from "../helpers/urls.js";
 import navbar from "../modules/navbar.js";
 import footer from "../modules/footer.js";
 import GetData from '../helpers/getData.js';
