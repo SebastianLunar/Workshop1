@@ -298,67 +298,69 @@ ul {
   width: 100%;
 }
 
-#modal {
-  background: rgba(0, 0, 0, 0.9);
-  color: #fff;
-  position: fixed;
-  top: -100vh;
-  left: 50%;
-  height: 100vh;
-  width: 100vw;
-  transition: all .5s;
+ 
+* {
+  padding: 0;
+  margin: 0;
 }
 
-#mostrar-modal {
-  display: none;
+a {
+  color: inherit;
+  text-decoration: none;
 }
-#mostrar-modal + label {
-  background: steelblue;
-  display: table;
-  margin: auto;
-  color: #fff;
-  line-height: 3;
-  padding: 0 1em;
-  text-transform: uppercase;
+
+button {
   cursor: pointer;
-}
-#mostrar-modal + label:hover {
-  background: #38678f;
-}
-
-#mostrar-modal:checked ~ #modal {
-  top: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: inherit;
 }
 
-#cerrar-modal {
-  display: none;
-}
-#cerrar-modal + label {
-  position: absolute;
-  top: 1em;
-  right: 1em;
-  z-index: 100;
-  color: #fff;
+.open-modales {
   font-weight: bold;
-  cursor: pointer;
-  background: tomato;
-  width: 25px;
-  height: 25px;
-  line-height: 25px;
-  text-align: center;
-  border-radius: 50%;
-  transition: all .5s;
+  background: steelblue;
+  color: var(--white);
+  padding: 0.75rem 1.75rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
 }
 
-#cerrar-modal:checked ~ #modal {
-  top: -100vh;
+
+/* modales
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.modales {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--black);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
 }
-#cerrar-modal + label {
-  display: none;
+
+.modales.is-visible {
+  visibility: visible;
+  opacity: 1;
 }
-#mostrar-modal:checked ~ #cerrar-modal + label {
-  display: block;
+
+.modales-dialog {
+  position: relative;
+  left: 50%;
+  width: 60vw;
+  height: 100vh;
+  background: white;
+  overflow: auto;
+  cursor: default;
 }
-#cerrar-modal:checked + label {
-  display: none;
+
+.modales-dialog > * {
+  padding: 1rem;
 }
