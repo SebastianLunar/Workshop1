@@ -9,7 +9,7 @@ const cuadro2 = (container, data) => {
                         <img class="w-100 pb-3" src="${image}" alt="Frame-20" border="0" id="cuadro-3">
                         <img class="w-100 pb-3" src="${image2}" alt="Frame-20" border="0" id="cuadro-1">
                     </div>
-                    <img src="${image3}" alt="Rectangle-7" border="0" class="w-100" id="cuadro-3">
+                    <img src="${image3}" alt="Rectangle-7" border="0" class="w-75" id="cuadro-3">
                 </div>
                 <div class="col-4">
                     <h1>${name}</h1>

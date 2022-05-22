@@ -9,7 +9,7 @@ const printSelectCard = (container, data) => {
                         <img class="w-100 pb-3" src="${image2}" alt="Frame-20" border="0" id="cuadro-1">
                         <img class="w-100 pb-3" src="${image3}" alt="Frame-20" border="0" id="cuadro-2">
                     </div>
-                    <img src="${image}" alt="Rectangle-7" border="0" class="w-100" id="cuadro-3">
+                    <img src="${image}" alt="Rectangle" border="0" class="w-75" id="cuadro-3">
                 </div>
                 <div class="col-4">
                     <h1>${name}</h1>

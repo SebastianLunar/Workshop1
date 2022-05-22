@@ -242,6 +242,11 @@ ul {
   cursor: pointer;
 }
 
+#container > .card:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
 #cuadro-1:hover, #cuadro-2:hover, #cuadro-3:hover {
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
