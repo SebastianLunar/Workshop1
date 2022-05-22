@@ -1,5 +1,4 @@
 const printSelectCard = (container, data) => {
-    console.log(data)
     const { id, name, price, image, image2, image3, description } = data;
     container.innerHTML += `
         <div class="container d-flex justify-content-center">
