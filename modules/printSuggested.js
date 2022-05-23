@@ -12,7 +12,7 @@ const printSuggested = async (url, container) => {
             card.setAttribute("id", elementid)
             card.innerHTML = `
         <img src="${image}" id =${elementid} class="card-image-top w-100" alt="Rectangle-7" border="0">
-            <div class="card-body" id =${elementid}>
+            <div class="card-body text-center" id =${elementid}>
                 <h5 class="card-title" id =${elementid}>${name}</h5>
                 <strong>
               <p class="card-text" id =${elementid}>$ ${price}</p>

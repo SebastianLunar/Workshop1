@@ -24,10 +24,7 @@ const navbar = (container) => {
                                     alt="user" /></a>
                             <ul class="dropdown-menu position-absolute" aria-labelledby="navbarDropdownMenuLink">
                                 <li>
-                                    <a class="dropdown-item" href="#">Perfil</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#" id="close-session">Cerrar sesion</a>
+                                    <a class="dropdown-item" href="./pages/register.html">Sign Up</a>
                                 </li>
                             </ul>
                         </li>

@@ -10,10 +10,10 @@ const footer = (container) => {
         <section class="footer-content">
             <img src="https://res.cloudinary.com/dhu8kck7f/image/upload/v1647030923/logo_ttn0ya.png" alt="">
             <div class="footer-redes">
-                <a href="https://www.youtube.com/?gl=MX"><img
+                <a href="#"><img
                         src="https://res.cloudinary.com/daalu/image/upload/v1647051139/Recursos.Fresh/youtube_xasbav.png"
                         alt=""></a>
-                <a href="https://www.facebook.com/Daaluempresa"><img
+                <a href="#"><img
                         src="https://res.cloudinary.com/daalu/image/upload/v1647051139/Recursos.Fresh/facebook_gnklu1.png"
                         alt=""></a>
             </div>

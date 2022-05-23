@@ -9,7 +9,7 @@ const cuadro2 = (container, data) => {
                         <img class="w-100 pb-3" src="${image}" alt="Frame-20" border="0" id="cuadro-3">
                         <img class="w-100 pb-3" src="${image2}" alt="Frame-20" border="0" id="cuadro-1">
                     </div>
-                    <img src="${image3}" alt="Rectangle-7" border="0" class="w-75" id="cuadro-3">
+                    <img src="${image3}" alt="Rectangle-7" border="0" class="w-75 h-75"  id="cuadro-3">
                 </div>
                 <div class="col-4">
                     <h1>${name}</h1>
@@ -24,8 +24,8 @@ const cuadro2 = (container, data) => {
                             <button class="btn rounded-circle border me-2">XXL</button>
                         </div>
                     </div>
-                    <button class="btn btn-dark w-100 my-2 rounded-0" id="add-cart">ADD TO CART</button>
-                    <button class="btn btn-primary w-100 my-2 rounded-0" id="buy-now">BUY IT NOW</button>
+                    <button class="llevar btn btn-dark w-100 my-2 rounded-0" id="add-cart">ADD TO CART</button>
+                    <button class="deployer btn btn-primary w-100 my-2 rounded-0" id="buy-now">BUY IT NOW</button>
                     <p class="mt-5">${description}</p>
                 </div>
             </div>
